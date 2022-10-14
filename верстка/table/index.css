@@ -1,0 +1,53 @@
+body {
+    background-color: #49aada;
+}
+
+.blog {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 15px;
+    width: 990px;
+    max-width: 95%;
+    background-color: #fff;
+}
+
+.table {
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 990px;
+    max-width: 95%;
+}
+
+.table__td {
+    font-size: 13px;
+    border: none;
+    font-family: Verdana, sans-serif;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    min-height: 50px;
+    text-align: center;
+}
+
+@media(max-width: 500px) {
+    .table__tr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .table__td {
+        margin: 0 -1px -1px 0;
+        padding-top: 35px;
+        position: relative;
+        width: 50%;
+    }
+
+    .blog {
+        padding: 20px 5px;
+        max-width: 90%;
+    }
+}
