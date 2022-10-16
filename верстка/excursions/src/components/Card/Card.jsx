@@ -26,12 +26,14 @@ export default function Card({ src, spanText, duration, description, list, times
                     <span className={`card__span ${spanText === "НОВИНКА" ? 'card__span_new' : ''}`}>{spanText}</span>
                 }
 
-                <div className="card__clock-container">
-                    <img className="card__clock" src={clock} alt="часы." />
-                    <p className="card__duration">{duration}</p>
-                </div>
+                <div className="card__header">
+                    <div className="card__clock-container">
+                        <img className="card__clock" src={clock} alt="часы." />
+                        <p className="card__duration">{duration}</p>
+                    </div>
 
-                <p className="card__description">{description}</p>
+                    <p className="card__description">{description}</p>
+                </div>
 
                 <ul className="card__list">
                     {

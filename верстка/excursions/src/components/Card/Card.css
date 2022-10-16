@@ -1,4 +1,5 @@
 .card {
+    width: 91%;
     max-width: 341px;
     border: 0.3px solid #828282;
     border-radius: 16px;
@@ -130,7 +131,6 @@
 .card__time {
     width: 64px;
     height: 24px;
-    margin-right: 7px;
     background: #D9E8FF;
     border-radius: 11px;
     font-family: 'Open Sans';
@@ -143,10 +143,7 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease-in-out;
-}
-
-.card__time:nth-child(n+5) {
-    margin: 7px 7px 0 0;
+    margin: 0 7px 7px 0;
 }
 
 .card__time:hover {
@@ -157,16 +154,12 @@
     color: #FFFFFF;
 }
 
-.card__time:nth-child(4) {
-    margin: 0;
-}
-
 .card__price-more {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 7px;
-    margin-top: 35px;
+    margin-top: 28px;
 }
 
 .card__price-container {
@@ -228,4 +221,128 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     color: #fff;
+}
+
+@media screen and (min-width: 1050px) {
+    .card {
+        min-width: 75%;
+        max-width: 1070px;
+        margin-bottom: 59px;
+        flex-direction: row;
+    }
+
+    .card__img {
+        max-width: 44%;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    .card__text-section {
+        max-width: 56%;
+        padding: 16px 17px 21px 22px;
+    }
+
+    .card__span {
+        width: 154px;
+        height: 42px;
+        font-size: 16px;
+        line-height: 1.25;
+        top: 46px;
+        left: 0;
+    }
+
+    .card__header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .card__clock-container {
+        margin-bottom: 14px;
+    }
+
+    .card__duration {
+        font-size: 14px;
+        line-height: 1.43;
+    }
+
+    .card__description {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 1.31;
+        color: #000000;
+        margin: 0 0 11px;
+    }
+
+    .card__list {
+        margin: 0 0 20px;
+    }
+
+    .card__item {
+        margin: 0 0 12px;
+    }
+
+    .card__item:last-of-type {
+        margin: 0;
+    }
+
+    .card__check {
+        margin-right: 14px;
+    }
+
+    .card__item-text {
+        font-size: 18px;
+        line-height: 1.11;
+        color: #343434;
+    }
+
+    .card__times-container {
+        flex-direction: row;
+    }
+
+    .card__times {
+        margin: 0;
+    }
+
+    .card__time {
+        width: 73px;
+        height: 28px;
+        background: #C5DCFF;
+        font-size: 16px;
+        line-height: 1.25;
+        color: #343434;
+        margin: 0 0 6px 6px;
+    }
+
+    .card__price-more {
+        padding: 0;
+        margin-top: 24px;
+        justify-content: flex-start;
+    }
+
+    .card__price {
+        font-size: 36px;
+        line-height: 0.56;
+        margin: 0 0 2px;
+    }
+
+    .card__price-ruble {
+        height: 26px;
+    }
+
+    .card__on-pier {
+        font-size: 14px;
+        line-height: 1.43;
+    }
+
+    .card__more-btn {
+        width: 187px;
+        height: 52px;
+        background: #FFD83C;
+        border: none;
+        border-radius: 23px;
+        font-size: 18px;
+        line-height: 1.11;
+        color: #292929;
+        margin-left: 13px;
+    }
 }

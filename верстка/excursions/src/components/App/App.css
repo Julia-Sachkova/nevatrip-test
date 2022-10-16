@@ -7,3 +7,10 @@
     background-color: #fff;
     flex-direction: column;
 }
+
+@media screen and (min-width: 1050px) {
+    .app {
+        max-width: 2440px;
+        margin: 67px auto;
+    }
+}
