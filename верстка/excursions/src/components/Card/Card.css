@@ -182,6 +182,7 @@
 
 .card__price-ruble {
     background-color: transparent;
+    object-fit: fill;
     width: 19px;
     height: 23px;
     margin-left: 5px;
