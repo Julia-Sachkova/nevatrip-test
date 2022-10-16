@@ -1,0 +1,231 @@
+.card {
+    max-width: 341px;
+    border: 0.3px solid #828282;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card__img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 220px;
+}
+
+.card__text-section {
+    max-width: 100%;
+    padding: 16px 12px 18px;
+}
+
+.card__span {
+    width: 99px;
+    height: 35px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.67;
+    background: #099CE8;
+    color: #fff;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__span_new {
+    background: #FED74B;
+    color: #3E3E3E;
+}
+
+.card__clock-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.card__clock {
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    margin-right: 9px;
+}
+
+.card__duration {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+    color: #9E9E9E;
+    margin: 0;
+    padding: 0;
+}
+
+.card__description {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #404040;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+.card__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 13px;
+}
+
+.card__item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 0 9px;
+}
+
+.card__item:last-of-type {
+    margin: 0;
+}
+
+.card__check {
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+    background-color: transparent;
+}
+
+.card__item-text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #4B4B4B;
+    margin: 0;
+    padding: 0;
+}
+
+.card__times-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__times {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style-type: none;
+    margin: 7px 0 0;
+    flex-wrap: wrap;
+}
+
+.card__time {
+    width: 64px;
+    height: 24px;
+    margin-right: 7px;
+    background: #D9E8FF;
+    border-radius: 11px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #343434;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.card__time:nth-child(n+5) {
+    margin: 7px 7px 0 0;
+}
+
+.card__time:hover {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    background: #6BA6FF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+}
+
+.card__time:nth-child(4) {
+    margin: 0;
+}
+
+.card__price-more {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 7px;
+    margin-top: 35px;
+}
+
+.card__price-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card__price {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 0.67;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.card__price-ruble {
+    background-color: transparent;
+    width: 19px;
+    height: 23px;
+    margin-left: 5px;
+}
+
+.card__on-pier {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 2;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.card__more-btn {
+    width: 165px;
+    height: 44px;
+    background: #FED74B;
+    border: 0.5px solid #CBA500;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #404040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.card__more-btn:hover {
+    background-color: #CBA500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+}

@@ -1,0 +1,9 @@
+.app {
+    max-width: 500px;
+    margin: 26px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    flex-direction: column;
+}
