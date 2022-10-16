@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Tickets</title>
+</head>
+
+<body class="body">
+    <h3>Изначальный вид таблицы:</h3>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th class="table__th">id</th>
+                <th class="table__th">event_id</th>
+                <th class="table__th">event_date</th>
+                <th class="table__th">ticket_adult_price</th>
+                <th class="table__th">ticket_adult_quantity</th>
+                <th class="table__th">ticket_kid_price</th>
+                <th class="table__th">ticket_kid_quantity</th>
+                <th class="table__th">barcode</th>
+                <th class="table__th">user_id</th>
+                <th class="table__th">equal_price</th>
+                <th class="table__th">created</th>
+            </tr>
+            <tr>
+                <td class="table__td">1</td>
+                <td class="table__td">003</td>
+                <td class="table__td">2021-08-21 13:00:00</td>
+                <td class="table__td">700</td>
+                <td class="table__td">1</td>
+                <td class="table__td">450</td>
+                <td class="table__td">0</td>
+                <td class="table__td">11111111</td>
+                <td class="table__td">00451</td>
+                <td class="table__td">700</td>
+                <td class="table__td">2021-01-11 13:22:09</td>
+            </tr>
+            <tr>
+                <td class="table__td">2</td>
+                <td class="table__td">006</td>
+                <td class="table__td">2021-07-29 18:00:00</td>
+                <td class="table__td">1000</td>
+                <td class="table__td">0</td>
+                <td class="table__td">800</td>
+                <td class="table__td">2</td>
+                <td class="table__td">22222222</td>
+                <td class="table__td">00364</td>
+                <td class="table__td">1600</td>
+                <td class="table__td">2021-01-12 16:62:08</td>
+            </tr>
+            <tr>
+                <td class="table__td">3</td>
+                <td class="table__td">003</td>
+                <td class="table__td">2021-08-15 17:00:00</td>
+                <td class="table__td">700</td>
+                <td class="table__td">4</td>
+                <td class="table__td">450</td>
+                <td class="table__td">3</td>
+                <td class="table__td">33333333</td>
+                <td class="table__td">00015</td>
+                <td class="table__td">4150</td>
+                <td class="table__td">2021-01-13 10:08:45</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr class="hr" />
+
+    <h2>Моё решение Задачи 1:</h2>
+
+    <h3>Первый вариант:</h3>
+    <h4> просто добавить в таблицу еще 4 столбца с нужными данными.</h4>
+    <div>
+        <p>ticket_concession_price - цена льготного билета.</p>
+        <p>ticket_concession_quantity - количество льготных билетов.</p>
+        <p>ticket_group_price - цена группового билета.</p>
+        <p>ticket_group_quantity - количество групповых билетов.</p>
+    </div>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th class="table__th">id</th>
+                <th class="table__th">event_id</th>
+                <th class="table__th">event_date</th>
+                <th class="table__th">ticket_adult_price</th>
+                <th class="table__th">ticket_adult_quantity</th>
+                <th class="table__th">ticket_kid_price</th>
+                <th class="table__th">ticket_kid_quantity</th>
+                <th class="table__th">ticket_concession_price</th>
+                <th class="table__th">ticket_concession_quantity</th>
+                <th class="table__th">ticket_group_price</th>
+                <th class="table__th">ticket_group_quantity</th>
+                <th class="table__th">barcode</th>
+                <th class="table__th">user_id</th>
+                <th class="table__th">equal_price</th>
+                <th class="table__th">created</th>
+            </tr>
+            <tr>
+                <td class="table__td">1</td>
+                <td class="table__td">003</td>
+                <td class="table__td">2021-08-21 13:00:00</td>
+                <td class="table__td">700</td>
+                <td class="table__td">1</td>
+                <td class="table__td">450</td>
+                <td class="table__td">0</td>
+                <td class="table__td">250</td>
+                <td class="table__td">2</td>
+                <td class="table__td">1250</td>
+                <td class="table__td">4</td>
+                <td class="table__td">11111111</td>
+                <td class="table__td">00451</td>
+                <td class="table__td">700</td>
+                <td class="table__td">2021-01-11 13:22:09</td>
+            </tr>
+            <tr>
+                <td class="table__td">2</td>
+                <td class="table__td">006</td>
+                <td class="table__td">2021-07-29 18:00:00</td>
+                <td class="table__td">1000</td>
+                <td class="table__td">0</td>
+                <td class="table__td">800</td>
+                <td class="table__td">2</td>
+                <td class="table__td">300</td>
+                <td class="table__td">1</td>
+                <td class="table__td">700</td>
+                <td class="table__td">5</td>
+                <td class="table__td">22222222</td>
+                <td class="table__td">00364</td>
+                <td class="table__td">1600</td>
+                <td class="table__td">2021-01-12 16:62:08</td>
+            </tr>
+            <tr>
+                <td class="table__td">3</td>
+                <td class="table__td">003</td>
+                <td class="table__td">2021-08-15 17:00:00</td>
+                <td class="table__td">700</td>
+                <td class="table__td">4</td>
+                <td class="table__td">450</td>
+                <td class="table__td">3</td>
+                <td class="table__td">150</td>
+                <td class="table__td">5</td>
+                <td class="table__td">1100</td>
+                <td class="table__td">2</td>
+                <td class="table__td">33333333</td>
+                <td class="table__td">00015</td>
+                <td class="table__td">4150</td>
+                <td class="table__td">2021-01-13 10:08:45</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Этот вариант самый простой, но таблица становиться большой и сложночитаемой.</h4>
+
+    <hr class="hr" />
+
+    <h3>Второй вариант:</h3>
+
+    <h4>Создать отдельную таблицу с типами билетов.</h4>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th class="table__th">ticket_id</th>
+                <th class="table__th">ticket_type</th>
+                <th class="table__th">ticket_price</th>
+            </tr>
+            <tr>
+                <td class="table__td">1</td>
+                <td class="table__td">Детский</td>
+                <td class="table__td">300</td>
+            </tr>
+            <tr>
+                <td class="table__td">2</td>
+                <td class="table__td">Взрослый</td>
+                <td class="table__td">500</td>
+            </tr>
+            <tr>
+                <td class="table__td">3</td>
+                <td class="table__td">Льготный</td>
+                <td class="table__td">250</td>
+            </tr>
+            <tr>
+                <td class="table__td">4</td>
+                <td class="table__td">Групповой</td>
+                <td class="table__td">1200</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Из начальной таблицы убрать столбцы, отвечающие за цену и количество билетов.</h4>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th class="table__th">id</th>
+                <th class="table__th">event_id</th>
+                <th class="table__th">event_date</th>
+                <th class="table__th">barcode</th>
+                <th class="table__th">user_id</th>
+                <th class="table__th">equal_price</th>
+                <th class="table__th">created</th>
+            </tr>
+            <tr>
+                <td class="table__td">1</td>
+                <td class="table__td">003</td>
+                <td class="table__td">2021-08-21 13:00:00</td>
+                <td class="table__td">11111111</td>
+                <td class="table__td">00451</td>
+                <td class="table__td">700</td>
+                <td class="table__td">2021-01-11 13:22:09</td>
+            </tr>
+            <tr>
+                <td class="table__td">2</td>
+                <td class="table__td">006</td>
+                <td class="table__td">2021-07-29 18:00:00</td>
+                <td class="table__td">22222222</td>
+                <td class="table__td">00364</td>
+                <td class="table__td">1600</td>
+                <td class="table__td">2021-01-12 16:62:08</td>
+            </tr>
+            <tr>
+                <td class="table__td">3</td>
+                <td class="table__td">003</td>
+                <td class="table__td">2021-08-15 17:00:00</td>
+                <td class="table__td">33333333</td>
+                <td class="table__td">00015</td>
+                <td class="table__td">4150</td>
+                <td class="table__td">2021-01-13 10:08:45</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Создать итоговую таблицу, в которой по уникальному штрихкоду можно подробно посмотреть количество билетов и
+        их
+        тип.</h4>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th class="table__th">barcode</th>
+                <th class="table__th">ticket_id</th>
+                <th class="table__th">ticket_quantity</th>
+            </tr>
+            <tr>
+                <td class="table__td">1111111</td>
+                <td class="table__td">1</td>
+                <td class="table__td">3</td>
+            </tr>
+            <tr>
+                <td class="table__td">22222222</td>
+                <td class="table__td">3</td>
+                <td class="table__td">4</td>
+            </tr>
+            <tr>
+                <td class="table__td">33333333</td>
+                <td class="table__td">4</td>
+                <td class="table__td">1</td>
+            </tr>
+            <tr>
+                <td class="table__td">22222222</td>
+                <td class="table__td">2</td>
+                <td class="table__td">5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>В этом варианте сложность заключается в том, что придется взаимодействовать с несколькими таблицами, но зато
+        таблицу с типами можно легко дополнять.</h4>
+
+    <hr class="hr" />
+</body>
+
+</html>
