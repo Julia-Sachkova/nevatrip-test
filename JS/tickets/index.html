@@ -10,7 +10,7 @@
 </head>
 
 <body class="body">
-    <h3>Изначальный вид таблицы:</h3>
+    <h2>Изначальный вид таблицы:</h2>
     <table class="table">
         <tbody>
             <tr>
@@ -244,7 +244,7 @@
                 <th class="table__th">ticket_quantity</th>
             </tr>
             <tr>
-                <td class="table__td">1111111</td>
+                <td class="table__td">11111111</td>
                 <td class="table__td">1</td>
                 <td class="table__td">3</td>
             </tr>
@@ -270,6 +270,68 @@
         таблицу с типами можно легко дополнять.</h4>
 
     <hr class="hr" />
+
+    <h2>Моё решение Задачи 2:</h2>
+    <p>Для решения этого задания, я предлагаю взять за основу мой второй
+        вариант решения первой задачи.</p>
+    <p>Немного изменим итоговую таблицу, убрав столбец с количеством билетов, и добавим столбец
+        <strong>ticket_barcode</strong>, в котором будем отображать уникальный штрихкод для каждого билета по заказу.
+    </p>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th class="table__th">barcode</th>
+                <th class="table__th">ticket_id</th>
+                <th class="table__th">ticket_barcode</th>
+            </tr>
+            <tr>
+                <td class="table__td">11111111</td>
+                <td class="table__td">1</td>
+                <td class="table__td">00000001</td>
+            </tr>
+            <tr>
+                <td class="table__td">11111111</td>
+                <td class="table__td">1</td>
+                <td class="table__td">00000002</td>
+            </tr>
+            <tr>
+                <td class="table__td">11111111</td>
+                <td class="table__td">2</td>
+                <td class="table__td">00000003</td>
+            </tr>
+            <tr>
+                <td class="table__td">22222222</td>
+                <td class="table__td">3</td>
+                <td class="table__td">00000010</td>
+            </tr>
+            <tr>
+                <td class="table__td">22222222</td>
+                <td class="table__td">3</td>
+                <td class="table__td">00000011</td>
+            </tr>
+            <tr>
+                <td class="table__td">22222222</td>
+                <td class="table__td">4</td>
+                <td class="table__td">00000012</td>
+            </tr>
+            <tr>
+                <td class="table__td">22222222</td>
+                <td class="table__td">1</td>
+                <td class="table__td">00000013</td>
+            </tr>
+            <tr>
+                <td class="table__td">33333333</td>
+                <td class="table__td">2</td>
+                <td class="table__td">00000007</td>
+            </tr>
+            <tr>
+                <td class="table__td">33333333</td>
+                <td class="table__td">2</td>
+                <td class="table__td">00000008</td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 
 </html>

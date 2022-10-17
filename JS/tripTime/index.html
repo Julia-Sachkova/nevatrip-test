@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Time from A to B</title>
+</head>
+
+<body class="body">
+
+    <form class="block form">
+        <select class="select" name="route" id="route">
+            <option value="из A в B">из A в B</option>
+            <option value="из B в A">из B в A</option>
+            <option value="из A в B и обратно в А">из A в B и обратно в А</option>
+        </select>
+
+        <label class="label" for="time">Выберите время</label>
+        <select class="select" name="time" id="time" disabled="true">
+        </select>
+
+        <select class="select select_add" name="time" id="add-time">
+        </select>
+
+        <label class="label" for="num">Количество билетов</label>
+        <input class="select select_disabled" id="num" type="number" min="1" max="100" disabled="true" />
+
+        <button class="btn btn_disabled" disabled="true">Посчитать</button>
+    </form>
+
+    <div class="block result">
+    </div>
+
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./utils/constants.js"></script>
+</body>
+
+</html>
